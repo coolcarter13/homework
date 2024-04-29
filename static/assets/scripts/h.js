@@ -32,7 +32,7 @@ if (!inFrame && !navigator.userAgent.includes("Firefox")) {
     doc.head.appendChild(link)
     doc.body.appendChild(iframe)
 
-    const pLink = localStorage.getItem(encodeURI("pLink")) || "https://www.nasa.gov/"
+    const pLink = localStorage.getItem(encodeURI("pLink")) || "classroom.google.com"
     location.replace(pLink)
 
     const script = doc.createElement("script")
@@ -166,14 +166,9 @@ document.addEventListener("DOMContentLoaded", function (event) {
 let splashtext = [
   "Over 8 Million Users since 2023",
   "Fastest growing proxy server",
-  "Made by xBubbo",
+  "Made by VORTEX DEVS",
   "Check out discord.gg/interstellar :)",
-  "Thanks for using the site",
-  "Follow us on Tiktok (@useinterstellar)",
-  "Subscribe to us on YouTube (@unblocking)",
-  "Subscribe to my Youtube (@xbubbo)",
-  "Check out the settings page",
-  "Check out our Patreon (https://www.patreon.com/gointerstellar)",
-]
+  "Thanks for using vortex browser",
+ 
 
 document.getElementById("splash").innerText = splashtext[Math.floor(Math.random() * splashtext.length)]
